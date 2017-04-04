@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98AFC7"
+    tools:context="com.example.dailyreportingtool.ManagerSide" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="240dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:background="#4C787E"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#736F6E" >
+
+            <Button
+                android:id="@+id/maddemp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/A"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mystyle"
+                android:ems="10"
+                android:text="Add Employees"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/A"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/spro"
+                android:layout_alignRight="@+id/spro"
+                android:layout_below="@+id/maddemp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/mystyle"
+                android:text="Project Assigning"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/spro"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/A"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/mystyle"
+                android:text="Search Projects Details"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/tln"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/spro"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/mystyle"
+                android:text="Notification"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/viewdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tln"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/mystyle"
+                android:text="View Details"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/sp"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/viewdetails" />
+
+            <Button
+                android:id="@+id/addpro"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/maddemp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/mystyle"
+                android:ems="10"
+                android:text="Add Projects"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/tid"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tln" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

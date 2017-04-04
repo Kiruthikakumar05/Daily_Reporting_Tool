@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98AFC7"
+    tools:context="com.example.dailyreportingtool.TeamLeaderSide" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="240dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:background="#4C787E"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#736F6E" >
+
+            <Button
+                android:id="@+id/lattendence"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/mystyle"
+                android:ems="10"
+                android:text="Attendence"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/report1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lattendence"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/mystyle"
+                android:text="Project Reports"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/report"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/report1"
+                android:layout_alignRight="@+id/report1"
+                android:layout_below="@+id/report1" />
+
+            <Spinner
+                android:id="@+id/notify"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="22dp" />
+
+            <Button
+                android:id="@+id/noti1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_above="@+id/notify"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/mystyle"
+                android:text="Notification"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/Spinner02"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:visibility="gone"
+                android:layout_above="@+id/noti1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="18dp" />
+
+            <Button
+                android:id="@+id/lhistory"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_above="@+id/Spinner02"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/mystyle"
+                android:text="Daily  History"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/report"
+                android:layout_centerHorizontal="true"
+                android:text="Status : 0%"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/Spinner03"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                  android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/Spinner02" />
+
+            <Button
+                android:id="@+id/assign"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/lattendence"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mystyle"
+                android:ems="10"
+                android:text="Add Team Members"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/laddstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignBaseline="@+id/lhistory"
+                android:layout_alignBottom="@+id/lhistory"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/mystyle"
+                android:text="Status"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/lcheckin"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/mystyle1"
+        android:text="Check In"
+        android:textColor="#FFDEAD" />
+
+    <Button
+        android:id="@+id/lcheckout"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/lcheckin"
+        android:layout_alignBottom="@+id/lcheckin"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:background="@drawable/mystyle1"
+        android:text="Check Out"
+        android:textColor="#FFDEAD" />
+
+</RelativeLayout>
